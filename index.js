@@ -27,7 +27,9 @@ const minifyLitCssTemplateLiteral = (onload_options = {}) => {
                                 })
                             } else if (node.tag.name === 'html') {
                                 node.quasi.quasis = node.quasi.quasis.map(q => {
-                                    q.value = {raw: q.value.raw.replace(/(^\s+|\s+$|\n)/gm, '').trim()};
+                                    q.value = {
+                                        raw: q.value.raw.replace(/(^\s+|\s+$|\n)/gm, '').trim()
+                                    };
                                     return q;
                                 });
                             }
@@ -43,7 +45,4 @@ const minifyLitCssTemplateLiteral = (onload_options = {}) => {
     };
 }
 
-module.exports = {
-    minifyLitCssTemplateLiteral
-};
-
+module.exports = {minifyLitCssTemplateLiteral};
