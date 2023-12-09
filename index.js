@@ -6,9 +6,9 @@ const escodegen = require('escodegen');
 const postcss = require('postcss');
 const postcss_minify = require('postcss-minify');
 
-const minifyLitCssTemplateLiteral = (onload_options = {}) => {
+const minifyLitTemplateLiteral = (onload_options = {}) => {
     return {
-        name: 'Minify Lit CSS Template Literal',
+        name: 'Minify Lit Template Literal',
         setup(build) {
             const postcss_processor = postcss(postcss_minify());
 
@@ -45,4 +45,4 @@ const minifyLitCssTemplateLiteral = (onload_options = {}) => {
     };
 }
 
-module.exports = {minifyLitCssTemplateLiteral};
+module.exports = {minifyLitTemplateLiteral};
