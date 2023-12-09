@@ -1,13 +1,13 @@
 {
-    "name": "minify_lit_css_template_literal",
+    "name": "minify_lit_template_literal",
     "version": "1.0.0",
     "main": "index.js",
     "author": "vph",
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com:vphpersson/minify_lit_css_template_literal.git"
+        "url": "git+ssh://git@github.com:vphpersson/minify_lit_template_literal.git"
     },
-    "homepage": "https://github.com/vphpersson/minify_lit_css_template_literal",
+    "homepage": "https://github.com/vphpersson/minify_lit_template_literal",
     "dependencies": {
         "esprima-next": "latest",
         "estraverse": "latest",
@@ -16,3 +16,4 @@
         "postcss-minify": "latest"
     }
 }
+
