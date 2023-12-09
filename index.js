@@ -28,7 +28,7 @@ const minifyLitTemplateLiteral = (onload_options = {}) => {
                             } else if (node.tag.name === 'html') {
                                 node.quasi.quasis = node.quasi.quasis.map(q => {
                                     q.value = {
-                                        raw: q.value.raw.replace(/(^\s+|\s+$|\n)/gm, '').trim()
+                                        raw: q.value.raw.replace(/(\n\s+|\s+\n)/gm, '')
                                     };
                                     return q;
                                 });
